@@ -1,0 +1,63 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://clui0x8h5jhpk"
+path="res://.godot/imported/rooms.glb-984ed8208ad8bd89d45d5f748944e961.scn"
+
+[deps]
+
+source_file="res://rooms.glb"
+dest_files=["res://.godot/imported/rooms.glb-984ed8208ad8bd89d45d5f748944e961.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"nodes": {
+"PATH:Plane": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:UCX_Ramp": {
+"generate/physics": true,
+"physics/shape_type": 2
+},
+"PATH:floor": {
+"import/skip_import": true
+},
+"PATH:roof": {
+"generate/physics": true
+},
+"PATH:wall1": {
+"generate/physics": true
+},
+"PATH:wall1f2": {
+"generate/physics": true
+},
+"PATH:wall2": {
+"generate/physics": true
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

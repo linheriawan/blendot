@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://2boqsy0pusf6"]
+
+[ext_resource type="Script" uid="uid://bqj4igilspll2" path="res://script/splash.gd" id="1_b04ml"]
+[ext_resource type="Texture2D" uid="uid://cvfvnfimaqrft" path="res://assets/gaming.png" id="2_50j67"]
+
+[node name="splash" type="Node2D"]
+script = ExtResource("1_b04ml")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(598, 320)
+texture = ExtResource("2_50j67")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

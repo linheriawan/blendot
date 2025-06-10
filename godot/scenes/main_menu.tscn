@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpihx2qstlvsr"]
+
+[ext_resource type="Script" uid="uid://cf1p6jfnts0q" path="res://script/main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://cwjycoc2mdj58" path="res://assets/Logo.png" id="2_7vrkn"]
+[ext_resource type="PackedScene" uid="uid://demmxih01g8g2" path="res://scenes/options_page.tscn" id="2_bqqt6"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_06t4h")
+
+[node name="OptionsPage" parent="." instance=ExtResource("2_bqqt6")]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7vrkn")
+stretch_mode = 6
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -608.0
+offset_top = 12.0
+offset_right = -568.0
+offset_bottom = 52.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(13.56, 8)
+color = Color(0.0784314, 0.698039, 1, 0.913725)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -586.0
+offset_top = 26.0
+offset_right = -350.0
+offset_bottom = 206.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.12, 1.64)
+size_flags_stretch_ratio = 2.08
+theme_override_constants/separation = 14
+alignment = 1
+
+[node name="title" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "New Godot Game"
+
+[node name="play" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.131297, 0.5242, 0.92685, 1)
+text = "Test play"
+
+[node name="Options" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="quit" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.925507, 0, 0.224835, 1)
+text = "quit"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/quit" to="." method="_on_quit_pressed"]

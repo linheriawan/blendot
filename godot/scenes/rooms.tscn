@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cijye72ifm2ya"]
+
+[ext_resource type="PackedScene" uid="uid://clui0x8h5jhpk" path="res://rooms.glb" id="1_ajl2i"]
+
+[node name="rooms" instance=ExtResource("1_ajl2i")]
+
+[node name="UCX_Ramp" parent="." index="9"]
+visible = false

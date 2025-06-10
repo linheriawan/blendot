@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://baxmj60w7q51"
+path.s3tc="res://.godot/imported/Seamless_grass.jpg-25227aa8a71dc1a2e7e266721fe7e4d6.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://assets/Seamless_grass.jpg"
+dest_files=["res://.godot/imported/Seamless_grass.jpg-25227aa8a71dc1a2e7e266721fe7e4d6.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=2
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=1
+roughness/mode=1
+roughness/src_normal="res://Seamless_grass.jpg"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=true
+process/size_limit=0
+detect_3d/compress_to=0
